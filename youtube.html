@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="icons/upload.svg">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      sidebar
+    </div>
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views <strong>&#183</strong> 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views <strong>&#183</strong> 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views <strong>&#183</strong> 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views <strong>&#183</strong> 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views <strong>&#183</strong> 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+              Markiplier
+            </p>
+            <p class="video-stats">
+              19M views <strong>&#183</strong> 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- images in CSS: 
+- examples:
+  height: 300px;
+  object-fit: contain;
+  object-position: bottom;
+  border-width: 2px;
+  border-style: solid; */
+- when we set the width only, the height also changes! -->
+
+<!-- How much space elements take:
+  1. block element: ele that takes the entire line. (ex: paragraph)
+      *in a div: it takes the entire line in the div/container only, rather than the entire page.
+  2. inline block element: they only take as much space as they need to, not the entire line. (image ele and input ele)
+  3. inline element: elements inside a line of text (strong ele) 
+We can then use *CSS Display Property* to switch bw the first two. -->
+
+<!-- <div> element: 
+  - the most important element in HTML (used a lot!)
+  - div = division = just a box.
+  - a div can contain any type of elements inside it, as well as other divs. 
+  - divs are containers! helps us group multiple elements together. 
+  - by default, it's a block element (takes the entire line)
+      - if you want to have a div next to another, change the display to inline-block.
+  - by default, divs have a width of 100% --> 
+      
+<!-- NESTED LAYOUTS TECHNIQUE 
+  - Two types of layous: Vertical and Horizontal 
+  - We cna combine vertical and horizontal layouts inside to each other 
+  - For horizontal layouts: default divs (block)
+  - For vertical layouts: use inline-block.
+    - however, inline-block has some alignment problems 
+    - solution: CSS Grid
+  - an image inside a container, set width: 100%; it takes the entire space of its container/div -->
+
+<!-- FONTS
+  - Set a back-up font in case the first one fails to load 
+    - using a font stack ===> font-family: Roboto, Arial; (Arial will be the backup font) 
+  - It's more precise to do font-weight: 700 (or desired #) than font-weight:bold -->
+
+<!-- CSS GRID (structure)
+  - helps us create perfectly-aligned layouts
+  - a layout that has rows and columns.-->
+
+<!-- FLEXBOX
+  - similar to CSS Grid, but more flexible.
+  - useful when icons change depending on actions 
+  (ex: when you log out of YT, we will have three elements instead of 
+  four/with some elements being completely different) 
+  - flex only affects the first layer, if we have a div inside the 
+  flex div, the inner div won't be a flexbox unless you manuallly change it
+  to display: flex;. This is why elements won't automatically align when using 
+  align-items: center;
+  - flex-direction: row; is the default value, so no need to write that line of code.
+  - flex-shrink: 0; = don't shrink elements of a flexbox when shrinking the browser.
+  - width: 0; shrink completely by removing default width. 
+-->
+
+<!-- CSS POSITION
+  - adds another dimension to our page 
+  - uses: keeping headers at the top of the page, keeping a menu on the left side of a page, 
+  and placing elements on top of each other***
+  - position: static; is the default position
+  - position: fixed; the element doesn't take up space anymore
+  - a good practice is to set padding-top to the body instead of margin-top to a single element
+      - when making sure the header does not cover the elemenet completely, for example.
+  - fixed = elements are placed in the browser window (doesn't move when we scroll)
+  - absolutE = elements are placed on the page
+  - z-index: property that determines which elements comes first, and which one will appear on top of the other
+    - higher z-index, more in front/on top is the element. default z-index is 0.
+  -
+-->
