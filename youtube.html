@@ -31,7 +31,11 @@
       <div class="right-section">
         <img class="upload-icon" src="icons/upload.svg">
         <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
+
         <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
       </div>
     </div>
@@ -44,6 +48,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -66,6 +71,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -88,6 +94,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -95,13 +102,13 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
+              Crazy Tik Toks Taken Moments Before DISASTER
             </p>
             <p class="video-author">
-              Marques Brownlee
+              SSSniperWolf
             </p>
             <p class="video-stats">
-              3.4M views <strong>&#183</strong> 6 months ago
+              12M views <strong>&#183</strong> 1 year ago
             </p>
           </div>
         </div>
@@ -110,6 +117,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -117,13 +125,13 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              Try Not To Laugh Challenge #9
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
             </p>
             <p class="video-author">
-              Markiplier
+              Veritasium
             </p>
             <p class="video-stats">
-              19M views <strong>&#183</strong> 4 years ago
+              18M views <strong>&#183</strong> 4 months ago
             </p>
           </div>
         </div>
@@ -132,6 +140,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -139,13 +148,13 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
+              Kadane's Algorithm to Maximum Sum Subarray Problem
             </p>
             <p class="video-author">
-              Marques Brownlee
+              CS Dojo
             </p>
             <p class="video-stats">
-              3.4M views <strong>&#183</strong> 6 months ago
+              519K views <strong>&#183</strong> 5 years ago
             </p>
           </div>
         </div>
@@ -154,6 +163,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -161,13 +171,13 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              Try Not To Laugh Challenge #9
+              Anything You Can Fit In The Circle I'll Pay For
             </p>
             <p class="video-author">
-              Markiplier
+              MrBeast
             </p>
             <p class="video-stats">
-              19M views <strong>&#183</strong> 4 years ago
+              141M views <strong>&#183</strong> 1 year ago
             </p>
           </div>
         </div>
@@ -237,7 +247,7 @@ We can then use *CSS Display Property* to switch bw the first two. -->
   - adds another dimension to our page 
   - uses: keeping headers at the top of the page, keeping a menu on the left side of a page, 
   and placing elements on top of each other***
-  - position: static; is the default position
+  - position: static; is the default position.  will always appear at the back if there are other elements added after it
   - position: fixed; the element doesn't take up space anymore
   - a good practice is to set padding-top to the body instead of margin-top to a single element
       - when making sure the header does not cover the elemenet completely, for example.
@@ -245,5 +255,14 @@ We can then use *CSS Display Property* to switch bw the first two. -->
   - absolutE = elements are placed on the page
   - z-index: property that determines which elements comes first, and which one will appear on top of the other
     - higher z-index, more in front/on top is the element. default z-index is 0.
-  -
+  - to put an element on top of another:
+    - position: absolute;  INSIDE   position: relative;
+-->
+
+<!-- MAJOR SKILLS OF HTML/CSS:
+  1. Nested Layouts
+  2. display: block / inline-block
+  3. Grid
+  4. Flexbox
+  5. Position
 -->
