@@ -23,17 +23,26 @@
         <input class="search-bar" type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg">
-        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
         <div class="notifications-icon-container">
           <img class="notifications-icon" src="icons/notifications.svg">
           <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
         </div>
 
         <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
@@ -41,7 +50,30 @@
     </div>
 
     <div class="sidebar">
-      sidebar!
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
     </div>
 
     <div class="video-grid">
@@ -241,6 +273,9 @@ We can then use *CSS Display Property* to switch bw the first two. -->
   - flex-direction: row; is the default value, so no need to write that line of code.
   - flex-shrink: 0; = don't shrink elements of a flexbox when shrinking the browser.
   - width: 0; shrink completely by removing default width. 
+  - justify-items: center =>  centers horizontally
+  - align-items: center => centers vertically
+  IF you change to flex-direction: column; then the last two attributes/elements are switched in functionality.
 -->
 
 <!-- CSS POSITION
@@ -265,4 +300,22 @@ We can then use *CSS Display Property* to switch bw the first two. -->
   3. Grid
   4. Flexbox
   5. Position
+-->
+
+<!-- CSS SELECTORS
+  .sidebar-link => the dot used to target a class
+
+  targetting two separate classes:
+  .sidebar-link,
+  .header
+
+  .sidebar-link img  => SPACE, targets all images inside all sidebar links
+
+  .search-button:hover .tooltip => target the tooltips only when we're hovering over the search button
+  
+  transition: opacity 0.2s; => first what to transition, then how long the transition will take
+-->
+
+<!-- RESPONSIVE DESIGN
+  
 -->
